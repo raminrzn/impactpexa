@@ -1,0 +1,32 @@
+Package: impactpexa
+Title: IMPACT Prognostic Models for Traumatic Brain Injury - ModelsCloud Service
+Version: 0.1.0
+Authors@R: c(
+    person("Ramin", "Rezaeianzadeh", email = "raminrzn@student.ubc.ca",
+           role = c("aut", "cre")),
+    person("Ewout W.", "Steyerberg", role = "ctb",
+           comment = "First author of the IMPACT prognostic models"),
+    person("Andrew I.R.", "Maas", role = "ctb",
+           comment = "Senior author of the IMPACT prognostic models"))
+Description: Implements the IMPACT prognostic models for traumatic brain
+    injury described in Steyerberg et al. (PLoS Medicine 2008)
+    <doi:10.1371/journal.pmed.0050165>. Estimates the probability of 6-month
+    mortality and 6-month unfavourable outcome in adults with moderate to
+    severe TBI (Glasgow Coma Scale 12 or less) from admission characteristics,
+    across three nested models of increasing complexity: Core, Core+CT
+    (Extended) and Core+CT+Lab. Uses the continuous regression coefficients
+    published by the IMPACT investigators, so results match the authors'
+    own calculator rather than the rounded score chart in the paper.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    jsonlite,
+    stats,
+    utils
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/raminrzn/impactpexa
+BugReports: https://github.com/raminrzn/impactpexa/issues
